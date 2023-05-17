@@ -7,14 +7,14 @@ import openai
 def call_open_ai():
     openai.api_key = 'Ihr-API-Schlüssel'
 
-    response = openai.Completion.create(
+    _response = openai.Completion.create(
         engine="text-davinci-003",  # Prüfen Sie die aktuelle Engine-Version
 
         prompt="Übersetze den folgenden deutschen Text ins Russische: "
                "Herzlichen Glückwunsch zum Geburtstag liebe Mama!",
         max_tokens=60
     )
-    return response
+    return _response
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
